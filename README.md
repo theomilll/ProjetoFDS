@@ -12,6 +12,9 @@ pip install flask
 
 pip install db-sqlite3
 
+# Link do Jira
+https://vmonteab.atlassian.net/jira/software/projects/FDS/boards/1
+
 # Integrantes do Grupo
 Bernardo Meneses -- bmn@cesar.school
 
