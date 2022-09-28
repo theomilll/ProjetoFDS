@@ -18,10 +18,14 @@ Bernardo Meneses -- bmn@cesar.school
 
 Lara Pessoa -- lpn@cesar.school
 
+Leonardo Medeiros de Freitas -- lmf@cesar.school
+
+Raul Luiz Correia do Monte -- rlcm@cesar.school
+
 Théo Moura -- tam4@cesar.school
 
 Victor Montenegro -- vmab@cesar.school
 
 Vinícius Gonçalves -- vgp@cesar.school
 
-Yago Andrade -- ygav@cesar.school
+
