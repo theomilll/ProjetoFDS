@@ -1,7 +1,10 @@
 from django.shortcuts import render
+from .models import fdsApp
 
-def index(request):
+def inventory_list(request):
+    inventories = fdsApp.objects.all()
     context = {
-        "title": "Index Page"
+        "title": "Inventory List",
+        "inventories": inventories
     }
-    return render(request, "fds_app/index.html", context=context)
+    return render(request, "fds_app/inventory_list.html", context=context)

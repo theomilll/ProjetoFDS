@@ -1,6 +1,6 @@
 from django.urls import path
-from .views import index
+from .views import inventory_list
 
 urlpatterns = [
-    path("", index, name="index")
+    path("", inventory_list, name="inventory_list")
 ]
