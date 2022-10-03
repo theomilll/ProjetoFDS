@@ -7,3 +7,6 @@ class Inventory(models.Model):
     book_date = models.DataField(auto_now_add=True)
     
     
+    def __str__(self) -> str:
+        return self.name
+    
