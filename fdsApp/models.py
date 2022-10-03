@@ -8,4 +8,3 @@ class fdsApp(models.Model):
     
     def __str__(self) -> str:
         return self.name
-    
