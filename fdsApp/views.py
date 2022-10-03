@@ -1,4 +1,7 @@
 from django.shortcuts import render
 
 def index(request):
-    return render(request, "fds_app/index.html")
+    context = {
+        "title": "Index Page"
+    }
+    return render(request, "fds_app/index.html", context=context)
