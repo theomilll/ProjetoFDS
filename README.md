@@ -9,6 +9,7 @@ Python, HTML
 
 # Instalação
 pip install Django
+
 pip install bootstrap-py
 
 # Link do Jira
