@@ -5,7 +5,7 @@ Esse repositório contém a criação do Front-End e do Back-End do nosso projet
 O nosso projeto visa facilitar, por meio da criação de uma plataforma digital, a organização e a distribuição dos notebooks e livros da Cesar School para os seus alunos.
 
 # Linguagens de Programação
-Python
+Python, HTML
 
 # Instalação
 pip install Django
