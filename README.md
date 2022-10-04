@@ -15,6 +15,12 @@ pip install bootstrap-py
 # Link do Jira
 https://vmonteab.atlassian.net/jira/software/projects/FDS/boards/1
 
+# Issue/bug
+
+- Houve um problema ao identificar os livros e computadores isoladamente, fazendo com que não fosse possível desenvolver o código;
+- A criação de um database para os computadores em soma à database dos Livros faz o código parar de funcionar;
+- Não possível criar uma função para o botão de reservar.
+
 # Integrantes do Grupo
 Bernardo Meneses -- bmn@cesar.school
 
