@@ -1,0 +1,59 @@
+{% extends '../layout.html' %}
+{% block content %}
+<div class="content-section">
+    <table class="table table-striped table-bordered table-hovet">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nome</th>
+            <th scope="col">Quantidade em Estoque</th>
+            <th scope="col">Reservar</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for fdsApp in inventories %}
+            <tr style='cursor: pointer; cursor: hand;'>
+              <th scope="row">{{ forloop.counter }}</th>
+              <th scope="row">{{ fdsApp.name }}</th>
+              <th scope="row">{{ fdsApp.quantity_in_stock }}</th>
+              <th scope="row"><button class="btn btn-outline-success" type="submit">Reservar</button></th>
+            </tr>
+          {% endfor %}
+        </tbody>
+    </table>
+    <table class="table table-striped table-bordered table-hovet">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Unidade da Cesar School</th>
+          <th scope="col">Computadores disponíveis</th>
+          <th scope="col">Reservar</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr style='cursor: pointer; cursor: hand;'>
+          <th scope="row">1</th>
+          <th scope="row">Bom Jesus</th>
+          <th scope="row">34</th>
+          <th scope="row"><button class="btn btn-outline-success" type="submit">Reservar</button></th>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr style='cursor: pointer; cursor: hand;'>
+          <th scope="row">2</th>
+          <th scope="row">Brum</th>
+          <th scope="row">45</th>
+          <th scope="row"><button class="btn btn-outline-success" type="submit">Reservar</button></th>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr style='cursor: pointer; cursor: hand;'>
+          <th scope="row">3</th>
+          <th scope="row">Tiradentes</th>
+          <th scope="row">23</th>
+          <th scope="row"><button class="btn btn-outline-success" type="submit">Reservar</button></th>
+        </tr>
+      </tbody>
+  </table>
+</div>
+{% endblock %}
