@@ -11,3 +11,12 @@ def inventory_list(request):
 
 def book1(request):
     return render(request, 'book1.html')
+
+def book2(request):
+    return render(request, 'book2.html')
+
+def pc1(request):
+    return render(request, 'pc1.html')
+
+def pc2(request):
+    return render(request, 'pc2.html')
