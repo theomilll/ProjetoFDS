@@ -11,5 +11,5 @@ urlpatterns = [
     path("inventory/book1/", views.book1, name="book1"),
     path("inventory/book2/", views.book2, name="book2"),
     path("inventory/pc1/", views.pc1, name="pc1"),
-    path("inventory/pc2/", views.pc2, name="pc2")
+    path("inventory/pc2/", views.pc2, name="pc2"),
 ]

@@ -1,6 +1,8 @@
 from django.shortcuts import render
-from .models import fdsApp
+from .models import fdsApp, computers
 
+def checkOption(request):
+    return render(request, 'checkOption.html')
 
 def inventory_list(request):
     inventories = fdsApp.objects.all()
@@ -10,6 +12,14 @@ def inventory_list(request):
     }
     return render(request, "fds_app/inventory_list.html", context=context)
 
+def pc_list(request):
+    inventorypc = computers.objects.all()
+    context = {
+        "title": "Inventory List PC",
+        "inventorypc": inventorypc
+    }
+    return render(request, "fds_app/inventory_list.html", context=context)
+    
 
 def book1(request):
     return render(request, 'book1.html')

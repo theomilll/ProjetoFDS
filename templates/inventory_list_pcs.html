@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<div class="content-section">
+    <table class="table table-striped table-bordered table-hovet">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Livros</th>
+            <th scope="col">Quantidade em Estoque</th>
+            <th scope="col">Reservar</th>
+            <th scope="col">Devolver</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for computers in pc_list %}
+            <tr style='cursor: pointer; cursor: hand;'>
+              <th scope="row">{{ forloop.counter }}</th>
+              <th scope="row">{{ computers.c_name }}</th>
+              <th scope="row">{{ computers.c_quantity_in_stock }}</th>
+              <th scope="row"><a class="btn btn-outline-success" href="pc1">Reservar</a></th>
+              <th scope="row"><a class="btn btn-outline-success" href="pc2">Devolver</a></th>
+            </tr>
+          {% endfor %}
+        </tbody>
+    </table>
+</div>
