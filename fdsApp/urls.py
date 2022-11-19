@@ -1,4 +1,4 @@
-from .views import inventory_list, checkOption
+from .views import inventory_list, pc_list
 from django.urls import path
 
 
