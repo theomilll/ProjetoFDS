@@ -1,8 +1,6 @@
 from django.shortcuts import render
 from .models import fdsApp, computers
-
-def checkOption(request):
-    return render(request, 'checkOption.html')
+#teste
 
 def inventory_list(request):
     inventories = fdsApp.objects.all()
