@@ -1,16 +1,17 @@
 from django.shortcuts import render
 from .models import fdsApp, computers
-#teste
 
 def inventory_list(request):
     inventories = fdsApp.objects.all()
+    inventorypc = computers.objects.all()
     context = {
         "title": "Inventory List",
-        "inventories": inventories
+        "inventories": inventories,
+        "inventorypc": inventorypc,
     }
     return render(request, "fds_app/inventory_list.html", context=context)
 
-def pc_list(request):
+#def pc_list(request):
     inventorypc = computers.objects.all()
     context = {
         "title": "Inventory List PC",
