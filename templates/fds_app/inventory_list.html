@@ -17,8 +17,11 @@
               <th scope="row">{{ forloop.counter }}</th>
               <th scope="row">{{ fdsApp.name }}</th>
               <th scope="row">{{ fdsApp.quantity_in_stock }}</th>
-              <th scope="row"><a class="btn btn-outline-success" href="book1">Reservar</a></th>
-              <th scope="row"><a class="btn btn-outline-success" href="book2">Devolver</a></th>
+                 <th scope="row">  <a href="{% url 'reserve_book'  fdsApp.id %}" type="button"  style="width:140px; margin-left:10px;"
+                                        class="btn btn-dark" title="Reservar"> Reservar</a>   </th>
+
+                <th scope="row"> <a href="{% url 'return_book' fdsApp.id %}" type="button"  style="width:140px; margin-left:10px;"
+                                        class="btn btn-dark" title="Devolver"> Devolver</a> </th>
             </tr>
           {% endfor %}
           </div>
@@ -39,8 +42,11 @@
                 <th scope="row">{{ forloop.counter }}</th>
                 <th scope="row">{{ computers.c_name }}</th>
                 <th scope="row">{{ computers.c_quantity_in_stock }}</th>
-                <th scope="row"><a class="btn btn-outline-success" href="pc1">Reservar</a></th>
-                <th scope="row"><a class="btn btn-outline-success" href="pc2">Devolver</a></th>
+                   <th scope="row">  <a href="{% url 'reserve_computer' computers.id %}" type="button"  style="width:140px; margin-left:10px;"
+                                        class="btn btn-dark" title="Reservar"> Reservar</a>   </th>
+
+                <th scope="row"> <a href="{% url 'free_compute' computers.id %}" type="button"  style="width:140px; margin-left:10px;"
+                                        class="btn btn-dark" title="Devolver"> Devolver</a> </th>
               </tr>
             {% endfor %}
             </div>
