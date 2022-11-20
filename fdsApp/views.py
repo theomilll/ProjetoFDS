@@ -47,7 +47,7 @@ def horarioDaReservaPC(request):
     file_name = str_current_datetime
     file = open("historico.txt", 'a')
 
-    file.write("PC reservado às : \n" + file_name + "\n\n")
+    file.write("PC reservado as : \n" + file_name + "\n\n")
     file.close()
     context = {
         "title": "Horário da reserva",
@@ -68,7 +68,7 @@ def horarioDaReservaLivro(request):
     file_name = str_current_datetime
     file = open("historico.txt", 'a')
 
-    file.write("Livro reservado às : \n" + file_name + "\n\n")
+    file.write("Livro reservado as : \n" + file_name + "\n\n")
     file.close()
     context = {
         "title": "Horário da reserva",
@@ -97,7 +97,7 @@ def reserve_book(request, id):
     file_name = str_current_datetime
     file = open("historico.txt", 'a')
 
-    file.write("Livro reservado às : \n" + file_name + "\n\n")
+    file.write("Livro reservado as : \n" + file_name + "\n\n")
     file.close()
     
     book_object = get_object_or_404(fdsApp, id=id)
@@ -117,7 +117,7 @@ def return_book(request, id):
     file_name = str_current_datetime
     file = open("historico.txt", 'a')
 
-    file.write("O Livro devolvido às : \n" + file_name + "\n\n")
+    file.write("O Livro devolvido as : \n" + file_name + "\n\n")
     file.close()
     
     book_object = get_object_or_404(fdsApp, id=id)
@@ -138,7 +138,7 @@ def reserve_computer(request, id):
     file_name = str_current_datetime
     file = open("historico.txt", 'a')
 
-    file.write("PC reservado às : \n" + file_name + "\n\n")
+    file.write("PC reservado as : \n" + file_name + "\n\n")
     file.close()
     computer_object = get_object_or_404(computers, id=id)
     computer_object.c_quantity_in_stock -= 1
@@ -157,7 +157,7 @@ def free_computer(request, id):
     file_name = str_current_datetime
     file = open("historico.txt", 'a')
 
-    file.write("O PC foi devolvido às : \n" + file_name + "\n\n")
+    file.write("O PC foi devolvido as : \n" + file_name + "\n\n")
     file.close()
     computer_object = get_object_or_404(computers, id=id)
     computer_object.c_quantity_in_stock += 1
