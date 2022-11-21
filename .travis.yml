@@ -12,7 +12,7 @@ virtualenv:
   system_site_packages: true
 
 os:
-  - linux
+  - macos
 
 script:
   - python manage.py test
