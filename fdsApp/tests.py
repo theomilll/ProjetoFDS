@@ -116,6 +116,7 @@
 #         pass
 
 
+# comment this code to run above code
 from django.test import LiveServerTestCase
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
@@ -152,7 +153,7 @@ class SignUpFormTest(LiveServerTestCase):
     def testform(self):
         driver = webdriver.Chrome()
 
-        driver.get('http://127.0.0.1:8000/register/')
+        driver.get('http://127.0.0.1:8000/register')
 
         time.sleep(3)
 
