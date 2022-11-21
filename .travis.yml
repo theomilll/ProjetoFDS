@@ -1,11 +1,6 @@
 language: python
 
 python:
-  - "3.4"
-  - "3.5"
-  - "3.6"
-  - "3.7"
-  - "3.8"
   - "3.9"
 
 services:
@@ -17,7 +12,7 @@ virtualenv:
   system_site_packages: true
 
 os:
-  - windows
+  - linux
 
 script:
   - python manage.py test
