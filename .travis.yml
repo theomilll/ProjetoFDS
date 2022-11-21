@@ -17,7 +17,7 @@ env:
   - DOCKER_COMPOSE_VERSION=1.25.0
 
 script:
-  - pipenv run python manage.py test
+  - python3 manage.py test
 
 deploy:
   provider: heroku
