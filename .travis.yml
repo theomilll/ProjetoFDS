@@ -11,7 +11,10 @@ python:
 services:
   - docker
 install:
-  - pip install -r requirements.txt
+  - pip install django
+
+env:
+  - DOCKER_COMPOSE_VERSION=1.25.0
 
 script:
   - pipenv run python manage.py test
