@@ -3,13 +3,20 @@ language: python
 python:
 - "3.10.8"
 
-env:
-  - SECRET_KEY='TEST'
-
 services:
-  - sqlite
+  - docker
 install:
-  - pipenv install
+  - pip install -r requirements.txt
 
 script:
-  - python3 manage.py test
+  - pipenv run python manage.py test
+
+deploy:
+  provider: heroku
+  api_key:
+    secure: $HEROKU_API_KEY
+  app: $HEROKU_APP_NAME
+  on:
+    branch: main
+
+# Path: .travis.yml
