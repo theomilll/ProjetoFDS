@@ -8,9 +8,7 @@
 - Python, HTML
 
 # Instalação
-- pip install Django
-
-- pip install bootstrap-py
+- pip install -r requirements.txt
 
 # Link do Jira
 - https://vmonteab.atlassian.net/jira/software/projects/FDS/boards/1
