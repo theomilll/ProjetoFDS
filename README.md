@@ -1,4 +1,4 @@
-# ProjetoFDS
+# ProjetoFDS [![Build Status](https://app.travis-ci.com/theomilll/ProjetoFDS.svg?branch=main)](https://app.travis-ci.com/theomilll/ProjetoFDS)
 - Esse repositório contém a criação do Front-End e do Back-End do nosso projeto.
 
 # Objetivo do Projeto
