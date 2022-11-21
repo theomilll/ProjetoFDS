@@ -13,11 +13,14 @@ services:
 install:
   - pip install django
 
-env:
-  - DOCKER_COMPOSE_VERSION=1.25.0
+virtualenv:
+  system_site_packages: true
+
+os:
+  - windows
 
 script:
-  - python3 manage.py test
+  - python manage.py test
 
 deploy:
   provider: heroku
