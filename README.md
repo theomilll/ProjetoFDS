@@ -5,7 +5,7 @@
 - O nosso projeto visa facilitar, por meio da criação de uma plataforma digital, a organização e a distribuição dos notebooks e livros da Cesar School para os seus alunos.
 
 # Linguagens de Programação
-- Python, HTML
+- Python, HTML, CSS
 
 # Instalação
 - pip install -r requirements.txt
@@ -48,14 +48,8 @@ Agora, basta apenas rodar o servidor localmente:
 
 # Issues/bugs
 
-  Issues
-- A equipe de devs encontrou um problema no qual não conseguiu implementar o contador para diminuir a quantidade de computadores e livros ao reservar;
-- A equipe de devs encontrou um problema no qual não conseguiu implementar o contador para aumentar a quantidade de computadores e livros ao devolver;
-- Houve um problema ao identificar os livros e computadores isoladamente, fazendo com que não fosse possível desenvolver o código.
-
  Bugs
-- A criação de um database para os computadores em soma à database dos livros faz o código parar de funcionar;
-- A adição da logo "Reserva CESAR" não estava funcionando, no entanto, com pesquisas aprofudadas foi possível solucionar por meio de um formato de arquivo SVG.
+- Na aplicação do Heroku, quando um livro/computador é reservado, ele muda de posição. Esse Bug só ocorre na aplicação do Heroku, e não quando o código é rodado de maneira local.
 
 # Heroku
 - Login: theo
