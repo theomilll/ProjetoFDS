@@ -15,14 +15,12 @@
 
 # Utilização
 
-Instalar o projeto usando o venv é recomendado, porém é possível instalar sem usá-lo também.
-
-Ative o virtualenv no projeto:
+Inicie o virtualenv no projeto:
 
     $ virtualenv project-env
     $ source project-env/bin/activate
     
-Caso não tenha o django instalado ainda execute:
+Se o Django ainda não estiver instalado basta executar esse comando:
 
     $ pip3 install django
     
@@ -37,11 +35,11 @@ Instale os requirements:
 
     $ pip install requirements.txt
     
-Aplique as migrações do banco de dados:
+Aplique as migrações:
  
     $ python manage.py migrate
     
-Agora, basta apenas rodar o servidor localmente:
+Por final, basta rodar o serivor no terminal:
 
     $ python manage.py runserver
     
