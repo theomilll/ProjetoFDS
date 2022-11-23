@@ -44,7 +44,7 @@ Por final, basta rodar o serivor no terminal:
     $ python manage.py runserver
 
 # Heroku
-- https://reservacesarr.herokuapp.com/
+- https://reservacesar01.herokuapp.com/
 
 # Integrantes do Grupo
 - Bernardo Meneses -- bmn@cesar.school
