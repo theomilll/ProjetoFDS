@@ -44,8 +44,6 @@ Por final, basta rodar o serivor no terminal:
     $ python manage.py runserver
 
 # Heroku
-- Login: theo
-- Senha: fdsprojeto
 - https://reservacesarr.herokuapp.com/
 
 # Integrantes do Grupo
