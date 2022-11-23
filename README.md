@@ -42,12 +42,6 @@ Aplique as migrações:
 Por final, basta rodar o serivor no terminal:
 
     $ python manage.py runserver
-    
-
-# Issues/bugs
-
- Bugs
-- Na aplicação do Heroku, quando um livro/computador é reservado, ele muda de posição. Esse Bug só ocorre na aplicação do Heroku, e não quando o código é rodado de maneira local.
 
 # Heroku
 - Login: theo
